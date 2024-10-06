@@ -24,12 +24,14 @@ SECRET_KEY = 'django-insecure-p#ez(%mvk@-#ll_e+(*pcde9+a#8yaa8*-865njeu1au3!iphz
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Your React app's URL
 ]
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -112,9 +114,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-in'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -125,6 +127,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = 'statics/'
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = 'media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

@@ -92,3 +92,6 @@ build/Release
 .vscode/
 .cache/
 .coverage/
+
+env
+statics
